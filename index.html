@@ -70,7 +70,7 @@
                      <div class="logo">
                         <a href="index.html">
                            <img src="assets/img/logo/logo.png" alt="logo"
-                              style="width: 80px; border: 2px solid transparent; border-radius: 100%; border: 2px solid #fad105;">
+                              style="width: 80px; border: 2px solid transparent; border-radius: 24%; border: 2px solid #fad105;">
                         </a>
                      </div>
                   </div>
@@ -268,7 +268,106 @@
             </div>
          </div>
       </section>
+
+      <!-- <div class="slider-main">
+         <div class="slider-container">
+            <button class="prev">❮</button>
+            <div class="slider">
+              <div class="slide active">Slide 1</div>
+              <div class="slide">Slide 2</div>
+              <div class="slide">Slide 3</div>
+            </div>
+            <button class="next">❯</button>
+          </div>
+      </div> -->
       <!-- hero area end -->
+       <!-- <style>
+         /* General styles */
+.slider-main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f4f4;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Slider styles */
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Hide slider on mobile view */
+
+
+
+       </style>
+       <script>
+         const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentSlide = 0;
+
+const updateSlider = () => {
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+};
+
+// Next button click
+nextButton.addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  updateSlider();
+});
+
+// Previous button click
+prevButton.addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+       </script> -->
 
       <!-- features area start -->
 
@@ -722,11 +821,11 @@
                            <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
                                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     What types of painting services do you provide?
                                  </button>
                               </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show"
+                              <div id="collapseOne" class="accordion-collapse collapse "
                                  aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
                                  <div class="accordion-body">
                                     <p>We offer a range of painting services including interior painting, exterior
@@ -1214,7 +1313,7 @@
                            <div class="logo">
                               <a href="index.html">
                                  <img src="assets/img/logo/logo.png" alt="logo"
-                                    style="width: 80px; border: 2px solid transparent; border-radius: 100%; border: 2px solid #fad105;">
+                                    style="width: 80px; border: 2px solid transparent; border-radius: 24%; border: 2px solid #fad105;">
                               </a>
                            </div>
                         </div>
